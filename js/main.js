@@ -8,8 +8,9 @@
 
 const containerGrid = document.getElementById(`container_square`); //recupero il parent dei quadratini
 
-for (let i=0; i < 100; i++){  
+for (let i=1; i < 101; i++){  
     const square = createSquare();
+    square.innerText = i;
     containerGrid.append(square); // aggiungo al parent il quadratino per 100 volte con il ciclo
 }
 
